@@ -57,18 +57,6 @@ export const originSources = {
     title: "今日最热",
     home: "https://coolapk.com",
   },
-  "mktnews": {
-    name: "MKTNews",
-    column: "finance",
-    home: "https://mktnews.net",
-    color: "indigo",
-    interval: Time.Realtime,
-    sub: {
-      flash: {
-        title: "快讯",
-      },
-    },
-  },
   "wallstreetcn": {
     name: "华尔街见闻",
     color: "blue",
@@ -78,14 +66,14 @@ export const originSources = {
       quick: {
         type: "realtime",
         interval: Time.Fast,
-        title: "快讯",
+        title: "实时快讯",
       },
       news: {
-        title: "最新",
+        title: "最新资讯",
         interval: Time.Common,
       },
       hot: {
-        title: "最热",
+        title: "最热文章",
         type: "hottest",
         interval: Time.Common,
       },
@@ -171,7 +159,7 @@ export const originSources = {
     home: "https://bbs.pcbeta.com",
     sub: {
       windows11: {
-        title: "Win11",
+        title: "Windows 11",
         type: "realtime",
         interval: Time.Fast,
       },
@@ -179,7 +167,6 @@ export const originSources = {
         title: "Windows 资源",
         type: "realtime",
         interval: Time.Fast,
-        disable: true,
       },
     },
   },
@@ -256,13 +243,13 @@ export const originSources = {
     type: "hottest",
     home: "https://news.ycombinator.com/",
   },
-  "producthunt": {
-    name: "Product Hunt",
-    color: "red",
-    column: "tech",
-    type: "hottest",
-    home: "https://www.producthunt.com/",
-  },
+  // "producthunt": {
+  //   name: "Product Hunt",
+  //   color: "red",
+  //   column: "tech",
+  //   type: "hottest",
+  //   home: "https://www.producthunt.com/",
+  // },
   "github": {
     name: "Github",
     color: "gray",
@@ -275,40 +262,40 @@ export const originSources = {
       },
     },
   },
-  "bilibili": {
-    name: "哔哩哔哩",
-    color: "blue",
-    home: "https://www.bilibili.com",
-    sub: {
-      "hot-search": {
-        title: "热搜",
-        column: "china",
-        type: "hottest",
-      },
-      "hot-video": {
-        title: "热门视频",
-        disable: "cf",
-        column: "china",
-        type: "hottest",
-      },
-      "ranking": {
-        title: "排行榜",
-        column: "china",
-        disable: "cf",
-        type: "hottest",
-        interval: Time.Common,
-      },
-    },
-  },
-  "kuaishou": {
-    name: "快手",
-    type: "hottest",
-    column: "china",
-    color: "orange",
-    // cloudflare pages cannot access
-    disable: "cf",
-    home: "https://www.kuaishou.com",
-  },
+  // "bilibili": {
+  //   name: "哔哩哔哩",
+  //   color: "blue",
+  //   home: "https://www.bilibili.com",
+  //   sub: {
+  //     "hot-search": {
+  //       title: "热搜",
+  //       column: "china",
+  //       type: "hottest",
+  //     },
+  //     "hot-video": {
+  //       title: "热门视频",
+  //       disable: "cf",
+  //       column: "china",
+  //       type: "hottest",
+  //     },
+  //     "ranking": {
+  //       title: "排行榜",
+  //       column: "china",
+  //       disable: "cf",
+  //       type: "hottest",
+  //       interval: Time.Common,
+  //     },
+  //   },
+  // },
+  // "kuaishou": {
+  //   name: "快手",
+  //   type: "hottest",
+  //   column: "china",
+  //   color: "orange",
+  //   // cloudflare pages cannot access
+  //   disable: "cf",
+  //   home: "https://www.kuaishou.com",
+  // },
   "kaopu": {
     name: "靠谱新闻",
     column: "world",
@@ -331,40 +318,38 @@ export const originSources = {
     type: "hottest",
     home: "https://www.baidu.com",
   },
-  "linuxdo": {
-    name: "LINUX DO",
-    column: "tech",
-    color: "slate",
-    home: "https://linux.do/",
-    disable: true,
-    sub: {
-      latest: {
-        title: "最新",
-        home: "https://linux.do/latest",
-      },
-      hot: {
-        title: "今日最热",
-        type: "hottest",
-        interval: Time.Common,
-        home: "https://linux.do/hot",
-      },
-    },
-  },
+  // "linuxdo": {
+  //   name: "LINUX DO",
+  //   column: "tech",
+  //   color: "slate",
+  //   home: "https://linux.do/",
+  //   disable: "cf",
+  //   sub: {
+  //     latest: {
+  //       title: "最新",
+  //       home: "https://linux.do/latest",
+  //     },
+  //     hot: {
+  //       title: "今日最热",
+  //       type: "hottest",
+  //       interval: Time.Common,
+  //       home: "https://linux.do/hot",
+  //     },
+  //   },
+  // },
   "ghxi": {
     name: "果核剥壳",
     column: "china",
     color: "yellow",
     home: "https://www.ghxi.com/",
-    disable: true,
   },
-  "smzdm": {
-    name: "什么值得买",
-    column: "china",
-    color: "red",
-    type: "hottest",
-    home: "https://www.smzdm.com",
-    disable: true,
-  },
+  // "smzdm": {
+  //   name: "什么值得买",
+  //   column: "china",
+  //   color: "red",
+  //   type: "hottest",
+  //   home: "https://www.smzdm.com",
+  // },
   "nowcoder": {
     name: "牛客",
     column: "china",
@@ -413,22 +398,6 @@ export const originSources = {
       },
     },
   },
-  "douban": {
-    name: "豆瓣",
-    column: "china",
-    title: "热门电影",
-    color: "green",
-    type: "hottest",
-    home: "https://www.douban.com",
-  },
-  "steam": {
-    name: "Steam",
-    column: "world",
-    title: "在线人数",
-    color: "blue",
-    type: "hottest",
-    home: "https://store.steampowered.com",
-  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {
@@ -448,38 +417,29 @@ export function genSources() {
     if (source.sub && Object.keys(source.sub).length) {
       Object.entries(source.sub).forEach(([subId, subSource], i) => {
         if (i === 0) {
-          _.push([
-            id,
-            {
-              redirect: `${id}-${subId}`,
-              ...parent,
-              ...subSource,
-            },
-          ] as [any, Source])
+          _.push([id, {
+            redirect: `${id}-${subId}`,
+            ...parent,
+            ...subSource,
+          }] as [any, Source])
         }
-        _.push([`${id}-${subId}`, { ...parent, ...subSource }] as [
-          any,
-          Source,
-        ])
+        _.push([`${id}-${subId}`, { ...parent, ...subSource }] as [any, Source])
       })
     } else {
-      _.push([
-        id,
-        {
-          title: source.title,
-          ...parent,
-        },
-      ])
+      _.push([id, {
+        title: source.title,
+        ...parent,
+      }])
     }
   })
 
-  return typeSafeObjectFromEntries(
-    _.filter(([_, v]) => {
-      if (v.disable === "cf" && process.env.CF_PAGES) {
-        return false
-      } else {
-        return v.disable !== true
-      }
-    }),
-  )
+  return typeSafeObjectFromEntries(_.filter(([_, v]) => {
+    if (v.disable === "cf" && process.env.CF_PAGES) {
+      return false
+    } else if (v.disable === true) {
+      return false
+    } else {
+      return true
+    }
+  }))
 }
